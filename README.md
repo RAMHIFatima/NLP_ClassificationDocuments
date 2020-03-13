@@ -6,9 +6,8 @@
 </p>
 
 
-## Les données:
+## Les données
 Les données qu'on a à notre possession ont été classés dans des répertoires correspondants aux classes de documents:
-
 - Advertisement.
 - Email.
 - Form.
@@ -22,12 +21,11 @@ Les données qu'on a à notre possession ont été classés dans des répertoire
 Chaque classe contient plusieurs documents.
 
 
-#### Distribution des données:
+#### Distribution des données
 Celon le graphe ci dessous, on remarque des classes dominantes par rapport aux autres, comme les classes Email, Letter, Memo.
 ![source](/img/distribution_donnees.PNG)
 
-#### Pré-Traitement des données:
-
+#### Pré-Traitement des données
 On commancepar une approche qui consiste à supposer que la plus petite unité d'information dans un texte est le mot . Nous allons donc représenter nos textes sous forme de séquences de mots.</br>
 
 Pour cela, on va proceder comme suit:
@@ -37,10 +35,8 @@ Pour cela, on va proceder comme suit:
 - Remplacer les lettres majuscule en minuscule . 
 
 
-#### Séparation des données :
-
+#### Séparation des données 
 En géneral on a besoin de 2 sets de données, Training et Testing.
-	
 - Training set :ou le jeu de données d'apprentissage , est le jeu de données initial utilisé pour former un algorithme afin de comprendre comment appliquer des technologies telles que les réseaux de neurones, pour apprendre et produire des résultats complexes. Il inclut les données d'entrée et la sortie attendue correspondante. Le but du jeu de données d'apprentissage est de fournir à votre algorithme des données de «vérité sur le terrain».
 - Testing set : ou le jeu de données de test, cependant, est utilisé pour évaluer le degré de l'apprentissage de votre algorithme . Vous ne pouvez pas simplement réutiliser le jeu de données d'apprentissage lors de la phase de test car l'algorithme "connaît" déjà la sortie attendue, ce qui va à l'encontre de l'objectif de test de l'algorithme.
 
@@ -48,8 +44,7 @@ On peut ajouter un 3ème set qui est le jeu de donnée de validation ,qui sert e
 
 ![source](/img/Separation_donnees.png)
 
-## Classification :
-
+## Classification 
 Trois types de classifieurs utilisés:
 
 - Classifieur Bayesien Naif .
@@ -60,16 +55,16 @@ L'objectif est de preserver le classifieur avec le plus grand score , pour cela 
 
 Ainsi je vais utiliser les matrices de confusion pour chaque classifieur , qui est , dans la terminologie de l'apprentissage supervisé, un outil servant à mesurer la qualité d'un système de classification
 
-Dans python , sklearn.metrics propose 2 librairies:classification_report, confusion_matrix.
+Dans python , sklearn.metrics propose 2 librairies: classification_report, confusion_matrix.
 
 
-### 1.Classifieur Bayesien Naif
-
-<strong>Vectorisation </strong>:Pour appliquer des algorithmes d'apprentissage automatique au texte, les documents doivent être transformés en vecteurs.
+### 1. Classifieur Bayesien Naif
+Le classifieur bayesien naïf est une méthode d’apprentissage supervisé qui repose sur une hypothèse simplificatrice forte: les descripteurs (Xj) sont deux à deux indépendants conditionnellement aux valeurs de la variable à prédire (Y)1. Pourtant, malgré cela, il se révèle robuste et efficace. Ses performances sont comparables aux autres techniques d’apprentissage. 
+<strong>Vectorisation </strong>: Pour appliquer des algorithmes d'apprentissage automatique au texte, les documents doivent être transformés en vecteurs.
 J'ai utilisé ce classifieur pour 3 representations differents:
-	- Bag of Word
-	- Word Level TF-IDF
-	- N-gram Level TF-IDF
+- Bag of Word
+- Word Level TF-IDF
+- N-gram Level TF-IDF
 
 <strong>Representation Bag of Word </strong>: Le moyen le plus simple et le plus classique de transformer un document en vecteur est l’encodage en sac de mots.
 
