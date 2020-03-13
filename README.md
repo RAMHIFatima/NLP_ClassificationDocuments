@@ -51,7 +51,7 @@ Trois types de classifieurs utilisés:
 - Reseau de neurones Convolutionnel (CNN).
 - Reseau de neuronnes Multi couches (MLP).
 
-L'objectif est de preserver le classifieur avec le plus grand score , pour cela je vais utiliser 3 metriques d'evaluation (Precision, Recall ,F1 score).
+L'objectif est de preserver le classifieur avec le plus grand score, pour cela je vais utiliser 3 metriques d'evaluation (Precision, Recall ,F1 score).
 
 Ainsi je vais utiliser les matrices de confusion pour chaque classifieur , qui est , dans la terminologie de l'apprentissage supervisé, un outil servant à mesurer la qualité d'un système de classification
 
