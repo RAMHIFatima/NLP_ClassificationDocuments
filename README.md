@@ -59,8 +59,9 @@ Dans python , sklearn.metrics propose 2 librairies: classification_report, confu
 
 
 ### 1. Classifieur Bayesien Naif
-Le classifieur bayesien naïf est une méthode d’apprentissage supervisé qui repose sur une hypothèse simplificatrice forte: les descripteurs (Xj) sont deux à deux indépendants conditionnellement aux valeurs de la variable à prédire (Y)1. Pourtant, malgré cela, il se révèle robuste et efficace. Ses performances sont comparables aux autres techniques d’apprentissage. 
-<strong>Vectorisation </strong>: Pour appliquer des algorithmes d'apprentissage automatique au texte, les documents doivent être transformés en vecteurs.
+Le classifieur bayesien naïf est une méthode d’apprentissage supervisé qui repose sur une hypothèse simplificatrice forte: les descripteurs (Xj) sont deux à deux indépendants conditionnellement aux valeurs de la variable à prédire (Y)1. Pourtant, malgré cela, il se révèle robuste et efficace. Ses performances sont comparables aux autres techniques d’apprentissage.
+
+Pour appliquer des algorithmes d'apprentissage automatique au texte, les documents doivent être transformés en vecteurs.
 J'ai utilisé ce classifieur pour 3 representations differents:
 - Bag of Word
 - Word Level TF-IDF
@@ -70,8 +71,14 @@ J'ai utilisé ce classifieur pour 3 representations differents:
 
 - Définir l'ensemble de tous les mots possibles pouvant figurer dans un document; notez sa taille par max_features.
 - Pour chaque document, encodez-le avec un vecteur de taille max_features, avec la valeur de la ième composante du vecteur égale au nombre de fois où le ième mot apparaît dans le document.
+
+![source](/img/BoW.PNG)
+
 <strong>Word level TF-IDF</strong> : Matrice representant les scores tf-idf de chaque terme dans les differents documents.
+![source](/img/Tfidf.PNG)
 
 <strong>N-gram Level TF-IDF </strong>:N-grams est la combinaison de N termes . Et cette Matrice represente les scores tf-idf de N_grams.
+
+![source](/img/tfidf_ngram.PNG)
 
 On remarque que les resultats du classifieur bayésien avec une representation (N_gram Level TF_IDF) donne de mailleur resultats que les autres representation.
