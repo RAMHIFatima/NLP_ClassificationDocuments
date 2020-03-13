@@ -9,16 +9,16 @@
 ## Les données:
 <p>Les données qu'on a à notre possession ont été classés dans des répertoires correspondants aux classes de documents:</p>
 
-*Advertisement
-*Email
-*Form
-*Letter
-*Memo
-*News
-*Note
-*Report
-*Resume
-*Scientific </br>
+-Advertisement
+-Email
+-Form
+-Letter
+-Memo
+-News
+-Note
+-Report
+-Resume
+-Scientific 
 Chaque classe contient plusieurs documents.
 
 
@@ -31,7 +31,6 @@ Celon le graphe ci dessous, on remarque des classes dominantes par rapport aux a
 On commancepar une approche qui consiste à supposer que la plus petite unité d'information dans un texte est le mot . Nous allons donc représenter nos textes sous forme de séquences de mots.</br>
 
 Pour cela, on va proceder comme suit:
-
     - Supprimer les tags html(s'ils existents).
     - Remplacer les ponctuations par des espaces.
     - Remplacer les lettres majuscule en minuscule . 
@@ -40,7 +39,6 @@ Pour cela, on va proceder comme suit:
 #### Séparation des données :
 
 En géneral on a besoin de 2 sets de données, Training et Testing.
-
 	- Training set :ou le jeu de données d'apprentissage , est le jeu de données initial utilisé pour former un algorithme afin de comprendre comment appliquer des technologies telles que les réseaux de neurones, pour apprendre et produire des résultats complexes. Il inclut les données d'entrée et la sortie attendue correspondante. Le but du jeu de données d'apprentissage est de fournir à votre algorithme des données de «vérité sur le terrain».
 	- Testing set : ou le jeu de données de test, cependant, est utilisé pour évaluer le degré de l'apprentissage de votre algorithme . Vous ne pouvez pas simplement réutiliser le jeu de données d'apprentissage lors de la phase de test car l'algorithme "connaît" déjà la sortie attendue, ce qui va à l'encontre de l'objectif de test de l'algorithme.
 
@@ -66,7 +64,6 @@ Dans python , sklearn.metrics propose 2 librairies:classification_report, confus
 
 <strong>Vectorisation </strong>:Pour appliquer des algorithmes d'apprentissage automatique au texte, les documents doivent être transformés en vecteurs.
 J'ai utilisé ce classifieur pour 3 representations differents:
-
 	- Bag of Word
 	- Word Level TF-IDF
 	- N-gram Level TF-IDF
