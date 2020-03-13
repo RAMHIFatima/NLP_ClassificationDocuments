@@ -46,7 +46,7 @@ En géneral on a besoin de 2 sets de données, Training et Testing.
 
 On peut ajouter un 3ème set qui est le jeu de donnée de validation ,qui sert en géneral à fournir une évaluation non biaisée d'un ajustement de modèle sur l'ensemble de données d'apprentissage tout en ajustant les hyperparamètres du modèle (par exemple, le nombre d'unités cachées dans un réseau de neurones ). Les jeux de données de validation peuvent être utilisés pour la régularisation en arrêtant tôt: arrêtez la formation lorsque le nombre d'erreurs sur le jeu de données de validation augmente, car il s'agit d'un signe de surajustement pour le jeu de données de formation.
 
-![source](/img/Separation_donnees.PNG)
+![source](/img/Separation_donnees.png)
 
 ## Classification :
 
