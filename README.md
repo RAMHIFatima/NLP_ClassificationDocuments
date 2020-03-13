@@ -7,18 +7,18 @@
 
 
 ## Les données:
-<p>Les données qu'on a à notre possession ont été classés dans des répertoires correspondants aux classes de documents:</p>
+Les données qu'on a à notre possession ont été classés dans des répertoires correspondants aux classes de documents:
 
--Advertisement
--Email
--Form
--Letter
--Memo
--News
--Note
--Report
--Resume
--Scientific 
+-Advertisement.
+-Email.
+-Form.
+-Letter.
+-Memo.
+-News.
+-Note.
+-Report.
+-Resume.
+-Scientific. 
 Chaque classe contient plusieurs documents.
 
 
@@ -31,16 +31,18 @@ Celon le graphe ci dessous, on remarque des classes dominantes par rapport aux a
 On commancepar une approche qui consiste à supposer que la plus petite unité d'information dans un texte est le mot . Nous allons donc représenter nos textes sous forme de séquences de mots.</br>
 
 Pour cela, on va proceder comme suit:
-    - Supprimer les tags html(s'ils existents).
-    - Remplacer les ponctuations par des espaces.
-    - Remplacer les lettres majuscule en minuscule . 
+    
+- Supprimer les tags html(s'ils existents).
+- Remplacer les ponctuations par des espaces.
+- Remplacer les lettres majuscule en minuscule . 
 
 
 #### Séparation des données :
 
 En géneral on a besoin de 2 sets de données, Training et Testing.
-	- Training set :ou le jeu de données d'apprentissage , est le jeu de données initial utilisé pour former un algorithme afin de comprendre comment appliquer des technologies telles que les réseaux de neurones, pour apprendre et produire des résultats complexes. Il inclut les données d'entrée et la sortie attendue correspondante. Le but du jeu de données d'apprentissage est de fournir à votre algorithme des données de «vérité sur le terrain».
-	- Testing set : ou le jeu de données de test, cependant, est utilisé pour évaluer le degré de l'apprentissage de votre algorithme . Vous ne pouvez pas simplement réutiliser le jeu de données d'apprentissage lors de la phase de test car l'algorithme "connaît" déjà la sortie attendue, ce qui va à l'encontre de l'objectif de test de l'algorithme.
+	
+- Training set :ou le jeu de données d'apprentissage , est le jeu de données initial utilisé pour former un algorithme afin de comprendre comment appliquer des technologies telles que les réseaux de neurones, pour apprendre et produire des résultats complexes. Il inclut les données d'entrée et la sortie attendue correspondante. Le but du jeu de données d'apprentissage est de fournir à votre algorithme des données de «vérité sur le terrain».
+- Testing set : ou le jeu de données de test, cependant, est utilisé pour évaluer le degré de l'apprentissage de votre algorithme . Vous ne pouvez pas simplement réutiliser le jeu de données d'apprentissage lors de la phase de test car l'algorithme "connaît" déjà la sortie attendue, ce qui va à l'encontre de l'objectif de test de l'algorithme.
 
 On peut ajouter un 3ème set qui est le jeu de donnée de validation ,qui sert en géneral à fournir une évaluation non biaisée d'un ajustement de modèle sur l'ensemble de données d'apprentissage tout en ajustant les hyperparamètres du modèle (par exemple, le nombre d'unités cachées dans un réseau de neurones ). Les jeux de données de validation peuvent être utilisés pour la régularisation en arrêtant tôt: arrêtez la formation lorsque le nombre d'erreurs sur le jeu de données de validation augmente, car il s'agit d'un signe de surajustement pour le jeu de données de formation.
 
@@ -49,9 +51,10 @@ On peut ajouter un 3ème set qui est le jeu de donnée de validation ,qui sert e
 ## Classification :
 
 Trois types de classifieurs utilisés:
-	- Classifieur Bayesien Naif .
-	- Reseau de neurones Convolutionnel (CNN).
-	- Reseau de neuronnes Multi couches (MLP).
+
+- Classifieur Bayesien Naif .
+- Reseau de neurones Convolutionnel (CNN).
+- Reseau de neuronnes Multi couches (MLP).
 
 L'objectif est de preserver le classifieur avec le plus grand score , pour cela je vais utiliser 3 metriques d'evaluation (Precision, Recall ,F1 score).
 
