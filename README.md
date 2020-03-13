@@ -9,16 +9,16 @@
 ## Les données:
 Les données qu'on a à notre possession ont été classés dans des répertoires correspondants aux classes de documents:
 
--Advertisement.
--Email.
--Form.
--Letter.
--Memo.
--News.
--Note.
--Report.
--Resume.
--Scientific. 
+- Advertisement.
+- Email.
+- Form.
+- Letter.
+- Memo.
+- News.
+- Note.
+- Report.
+- Resume.
+- Scientific. 
 Chaque classe contient plusieurs documents.
 
 
