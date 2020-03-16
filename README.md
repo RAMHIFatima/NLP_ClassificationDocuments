@@ -94,13 +94,14 @@ Dans cette partie j'ai utilisé un model simple , avec géneralement une couche 
 Le pooling sert à :
 
 - Réduire la dimension de chaque feature map
-- Prendre l’information la plus importante.
-<strong> MaxPooling</strong> Prend le maximum d’un voisinage.
+- Prendre l’information la plus importante.</br>
+<strong> MaxPooling</strong> Prend le maximum d’un voisinage.</br>
 <strong> DropOut </strong> est une technique ne regularisation , qui prend d’eune manière aléatoire quelque neurones qui va les ignorer pendant l’entrainement.au fur et a mesure qu'un réseau de neurones apprend, les poids de neurones s'installent dans leur contexte au sein du réseau.
 
 ![source](/img/CNN.PNG)
 
 ### 3. Reseau de neuronnes Multi Couches (Multi Layer Perceptron)
+
 
 Multi Layer Perceptron (MLP) ,est une classe de réseaux neuronaux artificiels à anticipation. Un MLP se compose d'au moins trois couches de nœuds: une couche d'entrée, une couche cachée et une couche de sortie. À l'exception des nœuds d'entrée, chaque nœud est un neurone utilisant une fonction d'activation non linéaire. MLP utilise une technique d'apprentissage supervisée appelée rétropropagation pour la formation. Ses multiples couches et son activation non linéaire distinguent MLP d'un perceptron linéaire. Il peut distinguer des données qui ne sont pas séparables linéairement.
 
