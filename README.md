@@ -53,7 +53,7 @@ Trois types de classifieurs utilisés:
 
 L'objectif est de preserver le classifieur avec le plus grand score, pour cela je vais utiliser 3 metriques d'evaluation (Precision, Recall ,F1 score).
 
-Ainsi je vais utiliser les matrices de confusion pour chaque classifieur , qui est , dans la terminologie de l'apprentissage supervisé, un outil servant à mesurer la qualité d'un système de classification
+Ainsi je vais utiliser les matrices de confusion pour chaque classifieur , qui est , dans la terminologie de l'apprentissage supervisé, un outil servant à mesurer la qualité d'un système de classification.
 
 Dans python , sklearn.metrics propose 2 librairies: classification_report, confusion_matrix.
 
@@ -95,8 +95,11 @@ Le pooling sert à :
 
 - Réduire la dimension de chaque feature map
 - Prendre l’information la plus importante.</br>
-<strong> MaxPooling</strong> Prend le maximum d’un voisinage.</br>
-<strong> DropOut </strong> est une technique ne regularisation , qui prend d’eune manière aléatoire quelque neurones qui va les ignorer pendant l’entrainement.au fur et a mesure qu'un réseau de neurones apprend, les poids de neurones s'installent dans leur contexte au sein du réseau.
+
+<strong> 
+MaxPooling</strong> Prend le maximum d’un voisinage.</br>
+<strong> 
+DropOut </strong> est une technique ne regularisation , qui prend d’eune manière aléatoire quelque neurones qui va les ignorer pendant l’entrainement.au fur et a mesure qu'un réseau de neurones apprend, les poids de neurones s'installent dans leur contexte au sein du réseau.
 
 ![source](/img/CNN.PNG)
 
